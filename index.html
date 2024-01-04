@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <h1>O meu blog</h1>
+    <input
+      type="search"
+      name="searchId"
+      id="searchId"
+      placeholder="search..."
+    />
+    <button type="submit">🔍</button>
+    <section id="posts">
+      <article id="content-article">
+        <p></p>
+        <footer></footer>
+      </article>
+    </section>
+    <form action="post">
+      <input type="text" name="title" id="title" placeholder="Title" />
+      <textarea
+        name="description"
+        id="description"
+        placeholder="Description"
+      ></textarea>
+      <button type="submit">Publish</button>
+    </form>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
