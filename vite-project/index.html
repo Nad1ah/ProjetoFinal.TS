@@ -1,13 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <link rel="stylesheet" href="styless.css" />
+
+    <title>Blog</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <h1>O meu blog</h1>
+    <input
+      class="searchId"
+      type="search"
+      name="searchId"
+      id="searchId"
+      placeholder="search..."
+    />
+    <button type="submit" id="submit">🔍</button>
+    <section class="posts" id="posts">
+      <div id="postsContainer">
+        <h2></h2>
+        <p></p>
+        <footer id="date-time"></footer>
+      </div>
+    </section>
+    <form id="postForm">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" /><br />
+
+      <label for="conteudo">Conteúdo:</label>
+      <textarea id="conteudo"></textarea><br />
+
+      <button type="submit">Criar Post</button>
+    </form>
+
+    <script src="./app.js"></script>
   </body>
 </html>
